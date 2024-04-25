@@ -1,0 +1,159 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out; /* Add smooth transition */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    padding: 10px 15px;
+    display: block;
+    color: inherit;
+    font-weight: bold;
+  }
+  
+  nav a.active {
+    background-color: #f0f0f0;
+  }
+  
+  /* On scroll, add background color and slight shadow to navigation */
+  .scroll nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Header */
+  header {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  header img {
+    width: 150px;
+    height: 150px;
+    animation: profile-pic 2s ease-in-out infinite alternate; /* Add animation */
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes profile-pic {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* About Section */
+  #about {
+    padding: 2rem 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  #about p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  footer .contact-info,
+  footer .social-media {
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  footer h2 {
+    margin-bottom: 1rem;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer a {
+    color: inherit;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+  
+  

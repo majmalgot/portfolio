@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="projects.css">
+    
+    <style>
+        /* CSS for container alignment */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* CSS for images */
+        .projects .container img {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ccc; /* Border for images */
+            padding: 10px; /* Padding for images */
+            max-width: 100%; /* Ensure images don't exceed container width */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="personal_portfolio.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>My Projects</h1>
+            <img src="project4.png" alt="Profile Picture">
+        </div>
+    </header>
+
+    <div class="container">
+        <h3>Select options given below</h3><br>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="technology">By Technology</option>
+            <option value="date">By Date</option>
+        </select>
+    </div>
+
+    <section class="projects">
+        <div class="container technology">
+            <img src="project1.png" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="container date">
+            <img src="project2.png" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="container technology">
+            <img src="project3.png" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <footer class="container">
+        <br><br><br><br>
+        <div class="social-media">
+            <h2>Connect with social-media!</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("filter").addEventListener("change", function() {
+            var filter = this.value;
+            var projects = document.querySelectorAll(".projects .container");
+
+            projects.forEach(function(project) {
+                project.style.display = "block"; // Reset display style for all projects
+
+                if (filter !== "all") {
+                    var filterValue = project.querySelector("." + filter).innerText.toLowerCase();
+
+                    if (filterValue !== filter) {
+                        project.style.display = "none"; // Hide projects that don't match the filter
+                    }
+                }
+            });
+        });
+    </script>    
+</body>
+</html>

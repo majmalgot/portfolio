@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Avenir Next, sans-serif; /* Professional font choice */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    color: #2e8b57; /* Green hover color for a professional feel */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle bottom shadow */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2e8b57; /* Green heading text for professionalism */
+  }
+  
+  header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: profile-pic 2s ease-in-out infinite alternate; /* Add animation */
+  }
+  
+  @keyframes profile-pic {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Contact Form */
+  .container form {
+    margin: 2rem auto;
+    max-width: 600px; /* Adjust width for larger screens */
+    padding: 2rem;
+    border: none; /* Remove border for cleaner look */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+    background-color: #fff; /* White background for form */
+  }
+  
+  .container form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .container form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333; /* Darker text for better contrast */
+  }
+  
+  .container form input[type="text"],
+  .container form input[type="email"],
+  .container form input[type="tel"] {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd; /* Lighter border color */
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out; /* Add smooth transition on focus */
+  }
+  
+  .container form input[type="text"]:focus,
+  .container form input[type="email"]:focus,
+  .container form input[type="tel"]:focus {
+    border-color: #2e8b57; 
+    outline: none; 
+  }
+  
+  .container form button[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #2e8b57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem; 
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out 
+  }
+  
+  .container form button[type="submit"]:hover {
+    background-color: #38a169; 
+  }
+  
